@@ -16,9 +16,9 @@
 # Add a feed source
 # echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 # echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
-sed -i '2s/^#//' feeds.conf.default
-sed -i '3s/^/#/' feeds.conf.default
-echo 'src-git helloworld https://github.com/iii80/helloworld' >>feeds.conf.default
+#sed -i '2s/^#//' feeds.conf.default
+#sed -i '3s/^/#/' feeds.conf.default
+#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 
 # git clone https://github.com/sbwml/luci-app-alist package/alist
 # git clone https://github.com/rufengsuixing/luci-app-onliner package/onliner
@@ -32,7 +32,7 @@ echo 'src-git helloworld https://github.com/iii80/helloworld' >>feeds.conf.defau
 #临时使用 SSR+ 自用修改源
 # git clone https://github.com/iii80/helloworld.git;master package/helloworld
 # echo "src-git helloworld https://github.com/fw876/helloworld.git;master" >> "feeds.conf.default"
-#echo "src-git helloworld https://github.com/iii80/helloworld.git;master" >> "feeds.conf.default"
+echo "src-git helloworld https://github.com/iii80/helloworld.git;master" >> "feeds.conf.default"
 
 
 # 2-添加 PowerOff 关机插件
